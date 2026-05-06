@@ -70,7 +70,7 @@ docker run -p 8000:8000 gnn-lipophilicity:latest
 
 ## Enlaces
 
-- **GitHub:** pendiente
+- **GitHub:** https://github.com/Apolo9899/GNN_Actividad_Final_MLOPS_MAPB
 - **Weights & Biases:** https://wandb.ai/marcoapolo-upm/gnn-lipophilicity/reports/GNN-Lipophilicity-—-Análisis-de-Experimentos--VmlldzoxNjc4ODMxMg==
 - **Endpoint en producción:** 
 Online: 
