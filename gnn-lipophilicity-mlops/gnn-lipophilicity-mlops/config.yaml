@@ -1,0 +1,31 @@
+model:
+  architecture: gin_jk        # gcn | gin | gat | gin_jk | gin_vn
+  hidden_channels: 256
+  n_layers: 5
+  dropout: 0.2
+  num_features: 9
+
+training:
+  seed: 42
+  lr: 0.001
+  weight_decay: 0.0001
+  epochs: 600
+  patience: 75
+  batch_size: 128
+  val_split: 0.15
+  scheduler: cosine           # cosine | plateau
+
+paths:
+  data_dir: data/nx_graphs
+  cache_dir: data/processed_cache
+  models_dir: models
+  checkpoint: models/checkpoint_final.pt
+
+wandb:
+  project: gnn-lipophilicity
+  entity: null                 # tu usuario de W&B
+
+api:
+  host: 0.0.0.0
+  port: 8000
+  model_path: models/checkpoint_final.pt
